@@ -49,3 +49,11 @@ export interface ScheduleItem {
   mentor: string;
   status: 'Upcoming' | 'Live' | 'Finished';
 }
+
+export interface ExamQuestion {
+  id: string;
+  question: string;
+  options: string[];
+  correctAnswer: number; // Index 0-4
+  explanation: string;
+}

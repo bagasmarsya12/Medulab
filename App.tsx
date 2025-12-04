@@ -8,6 +8,7 @@ import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import Partners from './components/Partners';
 import Schedule from './components/Schedule';
+import StudentPortal from './components/student/StudentPortal';
 
 function App() {
   const [activePage, setActivePage] = useState('home');
@@ -16,6 +17,11 @@ function App() {
     setActivePage(page);
     window.scrollTo(0, 0);
   };
+
+  // If student portal is active, we render a completely different layout
+  if (activePage === 'student') {
+    return <StudentPortal onLogout={() => setActivePage('home')} />;
+  }
 
   const renderContent = () => {
     switch (activePage) {

@@ -55,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
           <div className="hidden md:flex items-center space-x-3">
             <Button 
               variant="ghost" 
-              onClick={() => alert("Login Modal Clicked")}
+              onClick={() => onNavigate('student')}
             >
               Masuk
             </Button>
@@ -93,7 +93,13 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             ))}
           </div>
           <div className="pt-4 pb-4 border-t border-slate-200 flex flex-col gap-3 px-5">
-             <Button variant="secondary" className="w-full justify-center">Masuk</Button>
+             <Button 
+                variant="secondary" 
+                className="w-full justify-center"
+                onClick={() => handleNavClick('student')}
+             >
+                Masuk
+             </Button>
              <Button variant="primary" className="w-full justify-center">Daftar Sekarang</Button>
           </div>
         </div>

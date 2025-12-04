@@ -1,5 +1,5 @@
 import { Users, UserCheck, BookOpen, Briefcase, Stethoscope, ClipboardList, TrendingUp, ShieldCheck } from 'lucide-react';
-import { FeatureItem, ProgramItem, StepItem, TestimonialItem, InstructorItem, ScheduleItem } from './types';
+import { FeatureItem, ProgramItem, StepItem, TestimonialItem, InstructorItem, ScheduleItem, ExamQuestion } from './types';
 
 export const FEATURES: FeatureItem[] = [
   {
@@ -198,4 +198,72 @@ export const SCHEDULE_ITEMS: ScheduleItem[] = [
     mentor: 'dr. Maya Indah',
     status: 'Upcoming',
   },
+];
+
+export const EXAM_QUESTIONS: ExamQuestion[] = [
+  {
+    id: 'q1',
+    question: 'Seorang laki-laki 50 tahun datang dengan keluhan sesak napas yang memberat sejak 3 hari yang lalu. Pasien memiliki riwayat merokok 2 bungkus per hari selama 30 tahun. Pemeriksaan fisik menunjukkan barrel chest, perkusi hipersonor, dan auskultasi wheezing ekspirasi. Diagnosis yang paling mungkin adalah?',
+    options: [
+      'Asma Bronkial',
+      'Penyakit Paru Obstruktif Kronik (PPOK)',
+      'Tuberkulosis Paru',
+      'Pneumothorax',
+      'Efusi Pleura'
+    ],
+    correctAnswer: 1,
+    explanation: 'Diagnosis PPOK (Penyakit Paru Obstruktif Kronik) didukung oleh usia pasien (>40 tahun), riwayat merokok berat (faktor risiko utama), dan temuan fisik khas seperti barrel chest dan wheezing. Asma biasanya bersifat reversibel dan onset usia muda.'
+  },
+  {
+    id: 'q2',
+    question: 'Wanita 25 tahun datang ke IGD dengan keluhan sesak napas mendadak. Pada pemeriksaan fisik didapatkan trakea terdorong ke kiri, dada kanan tertinggal, perkusi hipersonor pada dada kanan, dan suara napas menghilang pada dada kanan. Tekanan darah 80/50 mmHg. Tatalaksana awal yang paling tepat adalah?',
+    options: [
+      'WSD (Water Sealed Drainage)',
+      'Oksigen Nasal Kanul 4 lpm',
+      'Needle Decompression di ICS 2 linea midklavikula',
+      'Foto Thorax AP',
+      'Intubasi Endotrakeal'
+    ],
+    correctAnswer: 2,
+    explanation: 'Gambaran klinis menunjukkan Tension Pneumothorax (deviasi trakea, hipotensi/syok obstruksi). Tatalaksana life-saving segera adalah Needle Decompression (thoracocentesis) sebelum pemasangan WSD.'
+  },
+  {
+    id: 'q3',
+    question: 'Seorang anak laki-laki usia 5 tahun dibawa ibunya dengan keluhan batuk menggonggong (barking cough) dan suara serak. Pada pemeriksaan fisik didapatkan stridor inspirasi. Rontgen leher menunjukkan "Steeple sign". Diagnosis yang paling mungkin adalah?',
+    options: [
+      'Epiglotitis',
+      'Croup (Laringotrakeobronkitis)',
+      'Abses Peritonsil',
+      'Benda Asing Saluran Napas',
+      'Trakeitis Bakterial'
+    ],
+    correctAnswer: 1,
+    explanation: 'Croup (Laringotrakeobronkitis) khas ditandai dengan batuk menggonggong (barking cough), suara serak, dan stridor inspirasi. Gambaran radiologis "Steeple sign" (penyempitan subglotis) sangat sugestif untuk Croup.'
+  },
+  {
+    id: 'q4',
+    question: 'Pasien laki-laki 65 tahun mengeluh nyeri dada kiri menjalar ke rahang sejak 2 jam lalu. EKG menunjukkan ST elevasi di lead II, III, dan aVF. Pembuluh darah koroner mana yang kemungkinan besar mengalami oklusi?',
+    options: [
+      'Left Anterior Descending (LAD)',
+      'Left Circumflex (LCx)',
+      'Right Coronary Artery (RCA)',
+      'Left Main (LM)',
+      'Posterior Descending Artery (PDA)'
+    ],
+    correctAnswer: 2,
+    explanation: 'ST elevasi pada lead inferior (II, III, aVF) menunjukkan infark miokard dinding inferior, yang sebagian besar (80-90%) disuplai oleh Arteri Koroner Kanan (RCA).'
+  },
+  {
+    id: 'q5',
+    question: 'Pasien dengan diagnosis TB Paru kasus baru BTA positif. Regimen pengobatan fase intensif yang tepat adalah?',
+    options: [
+      '2RHZE',
+      '4RH',
+      '2RHZ',
+      '2RHZE / 4RH3',
+      '5RHZE'
+    ],
+    correctAnswer: 0,
+    explanation: 'Sesuai pedoman nasional dan WHO, pengobatan TB paru kasus baru (Kategori 1) dimulai dengan fase intensif selama 2 bulan terdiri dari Rifampisin, Isoniazid, Pirazinamid, dan Etambutol (2RHZE).'
+  }
 ];
