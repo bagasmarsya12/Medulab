@@ -212,7 +212,14 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
       'Efusi Pleura'
     ],
     correctAnswer: 1,
-    explanation: 'Diagnosis PPOK (Penyakit Paru Obstruktif Kronik) didukung oleh usia pasien (>40 tahun), riwayat merokok berat (faktor risiko utama), dan temuan fisik khas seperti barrel chest dan wheezing. Asma biasanya bersifat reversibel dan onset usia muda.'
+    explanation: 'Diagnosis PPOK (Penyakit Paru Obstruktif Kronik) didukung oleh usia pasien (>40 tahun), riwayat merokok berat (faktor risiko utama), dan temuan fisik khas seperti barrel chest dan wheezing. Asma biasanya bersifat reversibel dan onset usia muda.',
+    optionExplanations: [
+      'Asma biasanya onset usia muda (<40 tahun), bersifat reversibel, dan tidak disertai barrel chest. Riwayat merokok berat lebih mengarah ke PPOK.',
+      'BENAR. Usia >40 tahun, riwayat merokok 60 pack-years (2 bungkus x 30 tahun), barrel chest, dan wheezing ekspirasi adalah tanda khas PPOK.',
+      'TB Paru biasanya disertai batuk produktif >2 minggu, demam subfebris, keringat malam, dan penurunan berat badan. Tidak ada barrel chest.',
+      'Pneumothorax ditandai dengan sesak mendadak, perkusi hipersonor, tapi suara napas menghilang (bukan wheezing) dan tidak ada barrel chest.',
+      'Efusi pleura menunjukkan perkusi pekak (bukan hipersonor), suara napas menurun, dan fremitus menurun. Tidak sesuai dengan gambaran klinis.'
+    ]
   },
   {
     id: 'q2',
@@ -225,7 +232,14 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
       'Intubasi Endotrakeal'
     ],
     correctAnswer: 2,
-    explanation: 'Gambaran klinis menunjukkan Tension Pneumothorax (deviasi trakea, hipotensi/syok obstruksi). Tatalaksana life-saving segera adalah Needle Decompression (thoracocentesis) sebelum pemasangan WSD.'
+    explanation: 'Gambaran klinis menunjukkan Tension Pneumothorax (deviasi trakea, hipotensi/syok obstruksi). Tatalaksana life-saving segera adalah Needle Decompression (thoracocentesis) sebelum pemasangan WSD.',
+    optionExplanations: [
+      'WSD adalah terapi definitif, namun pada tension pneumothorax dengan syok, needle decompression harus dilakukan TERLEBIH DAHULU sebagai tindakan life-saving.',
+      'Oksigen saja tidak mengatasi masalah utama (tekanan udara berlebih di rongga pleura). Pasien dalam kondisi syok obstruktif yang memerlukan dekompresi segera.',
+      'BENAR. Tension pneumothorax dengan tanda syok (TD 80/50) memerlukan needle decompression SEGERA di ICS 2 linea midklavikula sebagai tindakan life-saving.',
+      'Foto thorax akan memperlambat tatalaksana. Diagnosis tension pneumothorax adalah diagnosis KLINIS dan memerlukan intervensi SEGERA tanpa menunggu konfirmasi radiologi.',
+      'Intubasi dapat memperburuk kondisi karena ventilasi tekanan positif akan meningkatkan tekanan intrapleura. Dekompresi harus dilakukan terlebih dahulu.'
+    ]
   },
   {
     id: 'q3',
@@ -238,7 +252,14 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
       'Trakeitis Bakterial'
     ],
     correctAnswer: 1,
-    explanation: 'Croup (Laringotrakeobronkitis) khas ditandai dengan batuk menggonggong (barking cough), suara serak, dan stridor inspirasi. Gambaran radiologis "Steeple sign" (penyempitan subglotis) sangat sugestif untuk Croup.'
+    explanation: 'Croup (Laringotrakeobronkitis) khas ditandai dengan batuk menggonggong (barking cough), suara serak, dan stridor inspirasi. Gambaran radiologis "Steeple sign" (penyempitan subglotis) sangat sugestif untuk Croup.',
+    optionExplanations: [
+      'Epiglotitis ditandai dengan "tripod position", drooling, demam tinggi, dan tidak ada batuk. Gambaran radiologis menunjukkan "thumb sign", bukan steeple sign.',
+      'BENAR. Batuk menggonggong (barking cough), suara serak, stridor inspirasi, dan steeple sign (penyempitan subglotis) adalah tanda patognomonik Croup.',
+      'Abses peritonsil biasanya pada remaja/dewasa, ditandai dengan trismus, uvula terdorong kontralateral, dan "hot potato voice", bukan batuk menggonggong.',
+      'Benda asing saluran napas onset mendadak dengan riwayat tersedak, biasanya tanpa suara serak atau batuk menggonggong. Tidak ada steeple sign.',
+      'Trakeitis bakterial lebih berat dengan demam tinggi, tampak toksik, dan tidak responsif terhadap terapi Croup. Tidak menunjukkan steeple sign.'
+    ]
   },
   {
     id: 'q4',
@@ -251,7 +272,14 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
       'Posterior Descending Artery (PDA)'
     ],
     correctAnswer: 2,
-    explanation: 'ST elevasi pada lead inferior (II, III, aVF) menunjukkan infark miokard dinding inferior, yang sebagian besar (80-90%) disuplai oleh Arteri Koroner Kanan (RCA).'
+    explanation: 'ST elevasi pada lead inferior (II, III, aVF) menunjukkan infark miokard dinding inferior, yang sebagian besar (80-90%) disuplai oleh Arteri Koroner Kanan (RCA).',
+    optionExplanations: [
+      'LAD menyuplai dinding anterior dan septum. Oklusi LAD akan menunjukkan ST elevasi di lead V1-V4 dan I, aVL (anterior/anteroseptal), bukan lead inferior.',
+      'LCx menyuplai dinding lateral. Oklusi LCx menunjukkan ST elevasi di lead I, aVL, V5-V6 (lateral), bukan lead II, III, aVF.',
+      'BENAR. RCA menyuplai dinding inferior jantung pada 80-90% populasi (right dominant). ST elevasi di lead II, III, aVF menunjukkan infark inferior akibat oklusi RCA.',
+      'Left Main sangat jarang tersumbat. Jika terjadi, akan menunjukkan ST elevasi luas di banyak lead (anterior + lateral) dengan kondisi hemodinamik sangat tidak stabil.',
+      'PDA adalah cabang terminal dari RCA (pada right dominant) atau LCx (pada left dominant). Namun jawaban yang lebih tepat adalah RCA sebagai arteri utama.'
+    ]
   },
   {
     id: 'q5',
@@ -264,6 +292,13 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
       '5RHZE'
     ],
     correctAnswer: 0,
-    explanation: 'Sesuai pedoman nasional dan WHO, pengobatan TB paru kasus baru (Kategori 1) dimulai dengan fase intensif selama 2 bulan terdiri dari Rifampisin, Isoniazid, Pirazinamid, dan Etambutol (2RHZE).'
+    explanation: 'Sesuai pedoman nasional dan WHO, pengobatan TB paru kasus baru (Kategori 1) dimulai dengan fase intensif selama 2 bulan terdiri dari Rifampisin, Isoniazid, Pirazinamid, dan Etambutol (2RHZE).',
+    optionExplanations: [
+      'BENAR. Sesuai pedoman WHO dan Kemenkes RI, TB kasus baru (Kategori 1) menggunakan 2RHZE (fase intensif 2 bulan) dilanjutkan 4RH (fase lanjutan).',
+      '4RH adalah regimen fase LANJUTAN, bukan fase intensif. Fase intensif memerlukan 4 obat (RHZE) untuk membunuh kuman secara cepat.',
+      '2RHZ tidak lengkap karena tidak ada Etambutol (E). Etambutol penting untuk mencegah resistensi dan meningkatkan efektivitas terapi fase intensif.',
+      'Ini adalah regimen LENGKAP (intensif + lanjutan), bukan hanya fase intensif. Pertanyaan menanyakan fase intensif saja, yaitu 2RHZE.',
+      '5RHZE terlalu lama untuk fase intensif. Durasi standar fase intensif adalah 2 bulan, bukan 5 bulan. Durasi 5 bulan tidak sesuai pedoman.'
+    ]
   }
 ];

@@ -56,4 +56,5 @@ export interface ExamQuestion {
   options: string[];
   correctAnswer: number; // Index 0-4
   explanation: string;
+  optionExplanations?: string[]; // Explanation for each option (why correct/incorrect)
 }
