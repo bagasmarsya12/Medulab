@@ -367,7 +367,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
   {
     id: 'q9',
     question: 'Laki-laki 25 tahun jatuh dengan posisi tangan menumpu beban tubuh. Mengeluh nyeri dan bengkak pada pergelangan tangan kiri. Pemeriksaan radiologis menunjukkan fraktur radius distal dengan angulasi dorsal (seperti garpu makan). Apakah diagnosis dari gambar di atas?',
-    images: ['https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&q=80&w=600&h=400'], // X-Ray Placeholder
+    images: ['https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200'], // Stable Unsplash URL for X-Ray
     options: [
       'Fraktur Smith',
       'Fraktur Colles',
@@ -389,9 +389,9 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     id: 'q10',
     question: 'Seorang laki-laki 60 tahun datang dengan keluhan muncul bintil berair yang nyeri di dada kanan menjalar ke punggung, hanya pada satu sisi tubuh. Sebelumnya pasien merasa demam dan nyeri otot. Perhatikan gambar progresivitas lesi berikut. Diagnosis dan terapi antivirus yang tepat adalah?',
     images: [
-       'https://images.unsplash.com/photo-1628714693006-8d6935d214a1?auto=format&fit=crop&q=80&w=400&h=400', // Skin lesion 1
-       'https://images.unsplash.com/photo-1596599182064-9279092497d3?auto=format&fit=crop&q=80&w=400&h=400', // Skin lesion 2
-       'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=400&h=400'  // Skin lesion 3
+       'https://images.unsplash.com/photo-1621899530235-327113d09a20?q=80&w=800', // Stable URL for vesicles
+       'https://images.unsplash.com/photo-1580281658223-9b93f7d49b82?q=80&w=800', // Stable URL for rash on torso
+       'https://images.unsplash.com/photo-1604882352758-4b7e875b1c67?q=80&w=800'  // Stable URL for crusted lesions
     ],
     options: [
       'Varicella - Acyclovir 5x800 mg selama 7 hari',
