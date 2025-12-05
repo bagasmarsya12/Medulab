@@ -201,6 +201,7 @@ export const SCHEDULE_ITEMS: ScheduleItem[] = [
 ];
 
 export const EXAM_QUESTIONS: ExamQuestion[] = [
+  // --- EXISTING QUESTIONS 1-5 ---
   {
     id: 'q1',
     question: 'Seorang laki-laki 50 tahun datang dengan keluhan sesak napas yang memberat sejak 3 hari yang lalu. Pasien memiliki riwayat merokok 2 bungkus per hari selama 30 tahun. Pemeriksaan fisik menunjukkan barrel chest, perkusi hipersonor, dan auskultasi wheezing ekspirasi. Diagnosis yang paling mungkin adalah?',
@@ -299,6 +300,114 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
       '2RHZ tidak lengkap karena tidak ada Etambutol (E). Etambutol penting untuk mencegah resistensi dan meningkatkan efektivitas terapi fase intensif.',
       'Ini adalah regimen LENGKAP (intensif + lanjutan), bukan hanya fase intensif. Pertanyaan menanyakan fase intensif saja, yaitu 2RHZE.',
       '5RHZE terlalu lama untuk fase intensif. Durasi standar fase intensif adalah 2 bulan, bukan 5 bulan. Durasi 5 bulan tidak sesuai pedoman.'
+    ]
+  },
+
+  // --- NEW QUESTIONS 6-10 ---
+  {
+    id: 'q6',
+    question: 'Seorang wanita 30 tahun mengeluh nyeri perut kanan bawah yang semakin memberat. Pada pemeriksaan fisik didapatkan nyeri tekan titik McBurney, Rovsing sign (+), dan Psoas sign (+). Tatalaksana definitif yang paling tepat adalah?',
+    options: [
+      'Pemberian Antibiotik Intravena',
+      'Observasi di Rumah Sakit',
+      'Apendektomi',
+      'Pemberian Analgesik',
+      'CT Scan Abdomen'
+    ],
+    correctAnswer: 2,
+    explanation: 'Gambaran klinis (nyeri McBurney, Rovsing sign, Psoas sign) sangat khas untuk Apendisitis Akut. Tatalaksana definitif untuk apendisitis akut adalah pembedahan (apendektomi), baik secara terbuka maupun laparoskopi.',
+    optionExplanations: [
+      'Antibiotik hanya sebagai terapi ajuvan atau pada kasus early appendicitis tanpa komplikasi (tertentu), namun standar emas definitif tetap pembedahan.',
+      'Observasi hanya dilakukan jika diagnosis meragukan. Pada pasien ini tanda klinis sudah sangat jelas mengarah ke apendisitis akut.',
+      'BENAR. Apendektomi adalah terapi standar dan definitif untuk apendisitis akut guna mencegah perforasi dan peritonitis.',
+      'Analgesik hanya meredakan gejala sementara dan dapat menyamarkan tanda klinis (masking), tidak mengobati penyebab.',
+      'CT Scan adalah pemeriksaan penunjang untuk diagnosis, bukan tatalaksana.'
+    ]
+  },
+  {
+    id: 'q7',
+    question: 'Laki-laki 70 tahun dibawa keluarga karena bicara pelo dan kelemahan anggota gerak kanan mendadak 3 jam yang lalu. Pasien memiliki riwayat fibrilasi atrium tidak terkontrol. Diagnosis yang paling mungkin adalah?',
+    options: [
+      'Stroke Hemoragik Intraserebral',
+      'Stroke Iskemik Emboli',
+      'Stroke Iskemik Trombotik',
+      'Tumor Otak',
+      'Transient Ischemic Attack (TIA)'
+    ],
+    correctAnswer: 1,
+    explanation: 'Onset mendadak (akut) defisit neurologis fokal mengarah ke stroke. Riwayat fibrilasi atrium merupakan faktor risiko utama terbentuknya trombus di jantung yang dapat lepas menjadi emboli ke otak (Stroke Iskemik Kardioemboli).',
+    optionExplanations: [
+      'Stroke hemoragik biasanya disertai penurunan kesadaran, nyeri kepala hebat, dan riwayat hipertensi tidak terkontrol, bukan khas AF.',
+      'BENAR. Fibrilasi atrium menyebabkan stasis darah di atrium, membentuk trombus yang bisa lepas menjadi emboli ke otak, menyebabkan stroke iskemik emboli.',
+      'Stroke trombotik biasanya didahului gejala prodromal (TIA berulang), onset saat istirahat, dan terkait aterosklerosis, bukan AF.',
+      'Tumor otak memiliki onset kronis progresif (perlahan memberat), bukan mendadak dalam hitungan jam.',
+      'TIA gejala membaik sempurna dalam <24 jam. Pasien ini masih mengalami gejala setelah 3 jam, sehingga diagnosis kerja tetap Stroke sampai terbukti membaik.'
+    ]
+  },
+  {
+    id: 'q8',
+    question: 'Wanita 45 tahun mengeluh sering berdebar-debar, banyak berkeringat, dan berat badan turun meski nafsu makan meningkat. Pemeriksaan fisik: eksoftalmos dan benjolan difus di leher yang ikut bergerak saat menelan. Hasil lab yang diharapkan adalah?',
+    options: [
+      'TSH meningkat, fT4 menurun',
+      'TSH menurun, fT4 meningkat',
+      'TSH normal, fT4 normal',
+      'TSH meningkat, fT4 meningkat',
+      'TSH menurun, fT4 menurun'
+    ],
+    correctAnswer: 1,
+    explanation: 'Gejala klinis (berdebar, BB turun, nafsu makan naik, eksoftalmos, struma) sangat khas untuk Hipertiroidisme (Penyakit Graves). Pada hipertiroid primer, hormon tiroid (fT4/T4/T3) meningkat, yang menekan produksi TSH (feedback negatif), sehingga TSH rendah.',
+    optionExplanations: [
+      'Ini adalah gambaran Hipotiroidisme primer (kegagalan kelenjar tiroid memproduksi hormon).',
+      'BENAR. Pada hipertiroidisme primer (seperti Graves), fT4 tinggi akan menekan hipofisis sehingga TSH menjadi rendah/tersupresi.',
+      'Ini adalah kondisi Eutiroid.',
+      'Kondisi ini jarang, terjadi pada Hipertiroidisme sekunder (misal tumor hipofisis penghasil TSH).',
+      'Ini terjadi pada Hipotiroidisme sekunder (kegagalan hipofisis).'
+    ]
+  },
+  {
+    id: 'q9',
+    question: 'Laki-laki 25 tahun jatuh dengan posisi tangan menumpu beban tubuh. Mengeluh nyeri dan bengkak pada pergelangan tangan kiri. Pemeriksaan radiologis menunjukkan fraktur radius distal dengan angulasi dorsal (seperti garpu makan). Apakah diagnosis dari gambar di atas?',
+    images: ['https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&q=80&w=600&h=400'], // X-Ray Placeholder
+    options: [
+      'Fraktur Smith',
+      'Fraktur Colles',
+      'Fraktur Monteggia',
+      'Fraktur Galeazzi',
+      'Fraktur Scaphoid'
+    ],
+    correctAnswer: 1,
+    explanation: 'Fraktur Colles adalah fraktur radius distal dengan pergeseran fragmen distal ke arah dorsal dan radial, memberikan gambaran deformitas "dinner fork" (garpu makan). Ini terjadi akibat jatuh dengan tangan terextensi (FOOSH - Fall On Outstretched Hand).',
+    optionExplanations: [
+      'Fraktur Smith adalah kebalikan dari Colles (angulasi ke arah volar/palmar), biasanya akibat jatuh dengan tangan terfleksi.',
+      'BENAR. Fraktur Colles khas dengan angulasi dorsal ("dinner fork deformity") pada radius distal.',
+      'Fraktur Monteggia adalah fraktur ulna proksimal disertai dislokasi caput radius.',
+      'Fraktur Galeazzi adalah fraktur radius distal disertai dislokasi sendi radioulnar distal (DRUJ).',
+      'Fraktur Scaphoid biasanya nyeri di snuffbox anatomis, sering terlewat pada rontgen awal, tidak memberikan deformitas dinner fork.'
+    ]
+  },
+  {
+    id: 'q10',
+    question: 'Seorang laki-laki 60 tahun datang dengan keluhan muncul bintil berair yang nyeri di dada kanan menjalar ke punggung, hanya pada satu sisi tubuh. Sebelumnya pasien merasa demam dan nyeri otot. Perhatikan gambar progresivitas lesi berikut. Diagnosis dan terapi antivirus yang tepat adalah?',
+    images: [
+       'https://images.unsplash.com/photo-1628714693006-8d6935d214a1?auto=format&fit=crop&q=80&w=400&h=400', // Skin lesion 1
+       'https://images.unsplash.com/photo-1596599182064-9279092497d3?auto=format&fit=crop&q=80&w=400&h=400', // Skin lesion 2
+       'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=400&h=400'  // Skin lesion 3
+    ],
+    options: [
+      'Varicella - Acyclovir 5x800 mg selama 7 hari',
+      'Herpes Zoster - Acyclovir 5x800 mg selama 7 hari',
+      'Herpes Zoster - Acyclovir 5x200 mg selama 7 hari',
+      'Dermatitis Venenata - Kortikosteroid topikal',
+      'Herpes Simpleks - Acyclovir 5x200 mg selama 5 hari'
+    ],
+    correctAnswer: 1,
+    explanation: 'Gambaran vesikel berkelompok dengan dasar eritema yang tersusun dermatomal (satu sisi, menjalar) khas untuk Herpes Zoster. Terapi standar untuk dewasa imunokompeten adalah Acyclovir 5x800 mg/hari selama 7 hari. Dosis 5x200 mg adalah untuk Herpes Simpleks.',
+    optionExplanations: [
+      'Varicella (cacar air) lesi menyebar ke seluruh tubuh (sentrifugal), polimorfik, tidak dermatomal.',
+      'BENAR. Diagnosis Herpes Zoster (distribusi dermatomal). Dosis Acyclovir untuk Zoster adalah 5 x 800 mg (dosis tinggi).',
+      'Dosis 5x200 mg terlalu rendah untuk Zoster, itu adalah dosis untuk Herpes Simpleks.',
+      'Dermatitis venenata akibat kontak dengan racun serangga (tomcat), lesi biasanya linier ("kissing lesion"), tidak dermatomal.',
+      'Herpes simpleks biasanya berulang di lokasi yang sama (misal bibir/genital), tidak menyebar luas secara dermatomal seperti Zoster.'
     ]
   }
 ];

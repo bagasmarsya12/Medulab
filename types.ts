@@ -57,4 +57,5 @@ export interface ExamQuestion {
   correctAnswer: number; // Index 0-4
   explanation: string;
   optionExplanations?: string[]; // Explanation for each option (why correct/incorrect)
+  images?: string[]; // Optional array of image URLs
 }

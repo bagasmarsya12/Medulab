@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Clock, AlertTriangle, ChevronRight, ChevronLeft, CheckCircle, XCircle, AlertCircle, Flag, Menu } from 'lucide-react';
+import { Clock, AlertTriangle, ChevronRight, ChevronLeft, CheckCircle, XCircle, AlertCircle, Flag, Menu, ZoomIn } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { ExamQuestion } from '../../types';
 
@@ -14,7 +14,7 @@ export const IntroView: React.FC<IntroViewProps> = ({ onStart, onBack }) => {
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       <div className="max-w-2xl w-full bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
         <div className="bg-teal-600 p-8 text-center">
-          <h1 className="text-2xl font-bold text-white mb-2">Mini Tryout: Sistem Respirasi</h1>
+          <h1 className="text-2xl font-bold text-white mb-2">Mini Tryout: Sistem Respirasi & Klinis</h1>
           <p className="text-teal-100">Uji pemahaman klinis Anda dengan simulasi kasus nyata.</p>
         </div>
 
@@ -25,7 +25,7 @@ export const IntroView: React.FC<IntroViewProps> = ({ onStart, onBack }) => {
               <span className="text-xs text-slate-500 uppercase font-semibold">Menit</span>
             </div>
             <div className="text-center p-4 bg-slate-50 rounded-lg border border-slate-100">
-              <span className="block text-2xl font-bold text-slate-900">5</span>
+              <span className="block text-2xl font-bold text-slate-900">10</span>
               <span className="text-xs text-slate-500 uppercase font-semibold">Soal</span>
             </div>
             <div className="text-center p-4 bg-slate-50 rounded-lg border border-slate-100">
@@ -250,6 +250,24 @@ export const ExamView: React.FC<ExamViewProps> = ({ questions, onSubmit }) => {
                 </button>
               </div>
 
+              {/* IMAGES RENDER LOGIC */}
+              {currentQuestion.images && currentQuestion.images.length > 0 && (
+                <div className={`mb-8 grid gap-4 ${currentQuestion.images.length > 1 ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' : 'grid-cols-1'}`}>
+                  {currentQuestion.images.map((imgUrl, i) => (
+                    <div key={i} className={`relative group rounded-lg overflow-hidden border border-slate-200 bg-slate-100 ${currentQuestion.images && currentQuestion.images.length === 1 ? 'max-w-md' : ''}`}>
+                       <img 
+                         src={imgUrl} 
+                         alt={`Lampiran Soal ${i+1}`} 
+                         className="w-full h-auto object-contain max-h-80"
+                       />
+                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer">
+                         <ZoomIn className="text-white drop-shadow-md w-8 h-8" />
+                       </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               {/* Options */}
               <div className="space-y-3">
                 {currentQuestion.options.map((option, idx) => (
@@ -368,6 +386,16 @@ export const ResultView: React.FC<ResultViewProps> = ({ questions, userAnswers, 
                     <p className="text-slate-900 font-medium leading-relaxed mt-1">{q.question}</p>
                   </div>
 
+                  {/* IMAGES IN REVIEW */}
+                  {q.images && q.images.length > 0 && (
+                     <div className={`mb-6 ml-11 grid gap-4 ${q.images.length > 1 ? 'grid-cols-2 sm:grid-cols-3' : 'grid-cols-1'}`}>
+                       {q.images.map((imgUrl, i) => (
+                         <div key={i} className={`rounded-lg overflow-hidden border border-slate-200 bg-slate-50 ${q.images && q.images.length === 1 ? 'max-w-sm' : ''}`}>
+                            <img src={imgUrl} alt="Soal" className="w-full h-auto object-cover" />
+                         </div>
+                       ))}
+                     </div>
+                  )}
 
                   {/* All Options with Color Coding */}
                   <div className="space-y-3">

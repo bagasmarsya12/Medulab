@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Menu, X, Stethoscope } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from './ui/Button';
+import { Logo } from './ui/Logo';
 
 interface NavbarProps {
   onNavigate: (page: string) => void;
@@ -27,13 +28,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
         <div className="flex justify-between h-20 items-center">
           {/* Logo */}
           <div 
-            className="flex items-center gap-2 cursor-pointer" 
+            className="flex items-center cursor-pointer" 
             onClick={() => onNavigate('home')}
           >
-            <div className="bg-teal-600 p-1.5 rounded-lg">
-              <Stethoscope className="h-6 w-6 text-white" />
-            </div>
-            <span className="text-xl font-bold text-teal-700 tracking-tight">MEDULAB</span>
+            <Logo className="h-9 w-9" textClassName="text-2xl" />
           </div>
 
           {/* Desktop Links */}

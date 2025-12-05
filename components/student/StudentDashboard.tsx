@@ -1,6 +1,7 @@
 import React from 'react';
 import { LayoutDashboard, BookOpen, Clock, Calendar, Settings, PlayCircle, BarChart2 } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { Logo } from '../ui/Logo';
 
 interface StudentDashboardProps {
   onStartExam: () => void;
@@ -12,11 +13,9 @@ const StudentDashboard: React.FC<StudentDashboardProps> = ({ onStartExam }) => {
       {/* Sidebar */}
       <aside className="w-64 bg-white border-r border-slate-200 hidden md:flex flex-col">
         <div className="p-6 border-b border-slate-100">
+          {/* Replaced Icon with Logo Component */}
           <div className="flex items-center gap-2">
-            <div className="bg-teal-600 p-1.5 rounded-lg">
-              <BarChart2 className="h-5 w-5 text-white" />
-            </div>
-            <span className="text-lg font-bold text-slate-800">Student Portal</span>
+            <Logo className="h-8 w-8" textClassName="text-lg" />
           </div>
         </div>
         
